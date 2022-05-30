@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+}
+body {
+  background: #f7f7f7;
+  font: 12px/1.5 arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body .w1090 {
+  width: 1090px;
+  margin: 0 auto;
+}
+
+.head-wrapper {
+  height: 93px;
+}
+
+.head-wrapper .head-logo {
+  width: 250px;
+  height: 88px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/home_logo.png);
+}
+
+.head-wrapper .cart_box {
+  margin-top: 30px;
+  float: right;
+  z-index: 4;
+  width: 166px;
+  height: 32px;
+  color: #565656;
+  font-size: 13px;
+  font-family: 宋体;
+  display: inline-block;
+  background: url(../img/maincart.png) left top no-repeat;
+}
+
+.head-wrapper .cart_box .cart_logtext {
+  line-height: 32px;
+  padding-left: 45px;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  margin: 20px 200px 0px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.big {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 450px;
+  overflow: hidden;
+  display: none;
+}
+
+.big img {
+  position: absolute;
+
+}
+
+.mask {
+  width: 175px;
+  height: 175px;
+  background: rgba(255, 255, 0, 0.4);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: move;
+  display: none;
+}
+
+.small {
+  position: relative;
+}
+
+
+
+.step-number {
+  width: 84px;
+  height: 20px;
+  float: right;
+  margin-top: -200px;
+  margin-right: 350px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.step-number .bn {
+  width: 15px;
+  height: 18px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.step-number .bn[disabled] {
+  color: #CCC;
+  background-color: #EEE;
+  cursor: no-drop;
+}
+
+.step-number .input {
+  width: 150px;
+  height: 20px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=detail.css.map */

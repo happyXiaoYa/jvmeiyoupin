@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "123456",
+    "nickname": "千锋教育",
+    "identity": "超级管理员",
+    "gender": "男",
+    "age": 18,
+    "createTime": 1622087544072,
+    "updateTime": 1622087544072,
+    "cart": []
+  },
+  {
+    "id": 2,
+    "username": "guoxiang",
+    "password": "gx123456",
+    "nickname": "前端小灰狼",
+    "identity": "二阶段讲师",
+    "gender": "男",
+    "age": 18,
+    "createTime": 1622087544072,
+    "updateTime": 1622087544072,
+    "cart": []
+  },
+  {
+    "id": 3,
+    "username": "xiaotiantian",
+    "password": "xtt123456",
+    "nickname": "小甜甜",
+    "identity": "万能的",
+    "gender": "女",
+    "age": 29,
+    "createTime": 1622087544072,
+    "updateTime": 1622087544072,
+    "cart": []
+  },
+  {
+    "id": 4,
+    "username": "niufuren",
+    "password": "nfr123456",
+    "nickname": "牛夫人",
+    "identity": "二阶段讲师",
+    "gender": "男",
+    "age": 19,
+    "createTime": 1622087544072,
+    "updateTime": 1622087544072,
+    "cart": []
+  },
+  {
+    "id": 5,
+    "username": "xiaongda",
+    "password": "xd123",
+    "nickname": "熊大",
+    "identity": "森林保卫者",
+    "gender": "未知",
+    "age": 20,
+    "createTime": 1622087544072,
+    "updateTime": 1622087544072,
+    "cart": []
+  }
+]
