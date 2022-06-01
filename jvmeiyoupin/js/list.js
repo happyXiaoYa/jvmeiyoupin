@@ -41,7 +41,7 @@ class List {
         data.list.forEach(goods => {
             // console.log(goods);
             html += `<li class="sk_goods" data-id="${goods.goods_id}">
-                <a href="#none">
+                <a href="../html/introduce.html">
                     <img src="${goods.img_big_logo}" alst="">
                 </a>
                 <h5 class="sk_goods_title">${goods.title}</h5>
