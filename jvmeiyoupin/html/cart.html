@@ -1,37 +1,442 @@
--<!DOCTYPE html>
+-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车详情</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/cart.css">
-    
-</head>
-<body>
-    <header>
-        <ul>
-            <li><a href="../html/detail.html">商品列表</a></li>
-            <li><a href="../html/index.html">首页</a></li>
-        </ul>
-    </header>
-    <ul class="buy_top">
-        <li><input type="checkbox" id="all">&nbsp;全选</li>
-        <li>商品</li>
-        <li>单价(元)</li>
-        <li>数量</li>
-        <li>小计</li>
-        <li>操作</li>
-    </ul>
-    <div class="buy_list"></div>
-    <!-- 结算 -->
-    <div class="close">
-        <span>请放心购买</span>
-        <span class="allNum">数量:&emsp;<span></span></span>
-        <span class="allTotal">商品金额:&nbsp;¥ <span></span></span>
-        <span>去结算</span>
-    </div>
 
+</head>
+
+<body>
+    <!-- <header>
+        <a href="#">
+            <img src="images/header.jpg" height="80" width="100%" alt="">
+        </a>
+    </header> -->
+    <div class="shortcut">
+        <div class="w">
+            <ul class="fl city">
+                <li>
+                    <a href="#">北京</a>
+                </li>
+            </ul>
+            <ul class="fr nav">
+                <li>
+                    <a href="../html/login.html">你好，请登录</a>
+                    <a href="../html/register.html" class="f10">免费注册</a>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="../html/list.html">我的聚美优品</a>
+                    <i></i>
+                    <div class="dropdown-layer">
+                        <dl class="d">
+                            <dd>
+                                <a href="#">待处理订单</a>
+                            </dd>
+                            <dd>
+                                <a href="#">返修退换货</a>
+                            </dd>
+                            <dd>
+                                <a href="#">降价商品</a>
+                            </dd>
+                        </dl>
+                        <dl class="d">
+                            <dd>
+                                <a href="#">消息</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的问答</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的关注</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <a href="#">我的优惠券</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的理财</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="#">聚美会员</a>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="#">企业采购</a>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="#">客户服务</a>
+                    <i></i>
+                    <div class="dropdown-layer">
+                        <dl class="d">
+                            <dd>
+                                <a href="#">待处理订单</a>
+                            </dd>
+                            <dd>
+                                <a href="#">返修退换货</a>
+                            </dd>
+                            <dd>
+                                <a href="#">降价商品</a>
+                            </dd>
+                        </dl>
+                        <dl class="d">
+                            <dd>
+                                <a href="#">消息</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的问答</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的关注</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <a href="#">我的京豆</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的白条</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <a href="#">我的优惠券</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的理财</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li>
+                    <a href="#">网站导航</a>
+                    <i></i>
+                    <div class="dropdown-layer">
+                        <dl class="d">
+                            <dd>
+                                <a href="#">待处理订单</a>
+                            </dd>
+                            <dd>
+                                <a href="#">返修退换货</a>
+                            </dd>
+                            <dd>
+                                <a href="#">降价商品</a>
+                            </dd>
+                        </dl>
+                        <dl class="d">
+                            <dd>
+                                <a href="#">消息</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的问答</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的关注</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <a href="#">我的京豆</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的白条</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <a href="#">我的优惠券</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的理财</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+  
+    <div class="py-container">
+        <div class="w">
+            <div class="allgoods">
+                <h4>全部商品
+                </h4>
+                <div class="cart-main">
+                    <div class="cart-th clearfix">
+                        <div>
+                            <input type="checkbox">全选
+                        </div>
+                        <div class="">商品</div>
+                        <div class="">单价（元）</div>
+                        <div class="">数量</div>
+                        <div class="">小计（元）</div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="cart-body">
+                            <div class="cart-list">
+
+                                <!-- <ul class="goods-list yui3-g">
+                                    <li class="yui3-u-3-8 pr">
+                                        <input type="checkbox" class="good-checkbox">
+                                        <div class="good-item">
+                                            <div class="item-img">
+                                                <img src="uploads/mobile.png">
+                                            </div>
+                                            <div class="item-msg">Apple Macbook Air 13.3英寸笔记本电脑 银色（Corei5）处理器/8GB内存</div>
+                                        </div>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span>颜色: 银色</span>
+                                        <br>
+                                        <span>处理器: Core I5</span>
+                                        <br>
+                                        <span>内存: 8GB</span>
+                                        <br>
+                                        <span>尺寸: 13.3英寸</span>
+                                        <br>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span class="price">8848.00</span>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <div class="clearfix">
+                                            <a href="javascript:;" class="increment mins">-</a>
+                                            <input autocomplete="off" type="text" value="1" minnum="1" class="itxt">
+                                            <a href="javascript:;" class="increment plus">+</a>
+                                        </div>
+                                        <div class="youhuo">有货</div>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span class="sum">8848.00</span>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <div class="del1">
+                                            <a href="javascript:;">删除</a>
+                                        </div>
+                                        <div>移到我的关注</div>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-tool clearfix">
+                    <div class="money-box">
+                        <div class="sumprice">
+                            <div class="sumprice-top">
+                                <span>
+                                    已选择
+                                    <strong>0</strong> 件商品</span>
+                                <span>
+                                    <em>总价（不含运费）：</em>
+                                    <i class="summoney">￥
+                                        <span>0.00</span>
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="sumprice-bottom">
+                                已节省:￥20.00
+                            </div>
+                        </div>
+                        <div class="sumbtn">
+                            <a class="sum-btn" href="#">结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="service">
+            <!-- 服务模块 -->
+            <div class="w">
+                <ul>
+                    <li>
+                        <h5></h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 帮助模块 -->
+        <div class="w help">
+            <div class="fl">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="#">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">会员介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="#">生活旅行</a>
+                    </dd>
+                    <dd>
+                        <a href="#">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="#">大家电</a>
+                    </dd>
+                    <dd>
+                        <a href="#">联系客服</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="#">上门自提</a>
+                    </dd>
+                    <dd>
+                        <a href="#">211限时达</a>
+                    </dd>
+                    <dd>
+                        <a href="#">配送服务查询</a>
+                    </dd>
+                    <dd>
+                        <a href="#">配送费收取标准</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海外配送</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="#">货到付款</a>
+                    </dd>
+                    <dd>
+                        <a href="#">在线支付</a>
+                    </dd>
+                    <dd>
+                        <a href="#">分期付款</a>
+                    </dd>
+                    <dd>
+                        <a href="#">邮局汇款</a>
+                    </dd>
+                    <dd>
+                        <a href="#">公司转账</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="#">售后政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#">价格保护</a>
+                    </dd>
+                    <dd>
+                        <a href="#">退款说明</a>
+                    </dd>
+                    <dd>
+                        <a href="#">返修/退换货</a>
+                    </dd>
+                    <dd>
+                        <a href="#">取消订单</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd>
+                        <a href="#">夺宝岛</a>
+                    </dd>
+                    <dd>
+                        <a href="#">DIY装机</a>
+                    </dd>
+                    <dd>
+                        <a href="#">延保服务</a>
+                    </dd>
+                    <dd>
+                        <a href="#">聚美通信</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="w copyright">
+            <p>
+                <a href="#">关于我们</a>
+                <span> | </span>
+                <a href="#">联系我们</a>
+                <span> | </span>
+                <a href="#">联系客服</a>
+                <span> | </span>
+                <a href="#">合作招商</a>
+                <span> | </span>
+                <a href="#">商家帮助</a>
+                <span> | </span>
+                <a href="#">营销中心</a>
+                <span> | </span>
+                <a href="#">友情链接</a>
+                <span> | </span>
+                <a href="#">销售联盟</a>
+                <span> | </span>
+                <a href="#">聚美社区</a>
+                <span> | </span>
+                <a href="#">风险监测</a>
+                <span> | </span>
+                <a href="#">隐私政策</a>
+                <span> | </span>
+                <a href="#">聚美公益</a>
+                <span> | </span>
+                <a href="#">English Site</a>
+                <span> | </span>
+                <a href="#">Media & IR</a>
+            </p>
+            <div>
+                <p>COPYRIGHT © 2010-2021 北京科新信息技术有限公司 JUMEI.COM 保留一切权利。
+                </p>
+                <p>京公网安备 11010102001226
+                    <span>|</span>食品经营许可证
+                    <span>|</span>营业执照
+                    <span>|</span>网络食品交易第三方平台提供者备案信息表
+                    <span>|</span>增值电信业务经营许可证
+                    <span>|</span>药品医疗器械网信息服务备案
+                    <span>|</span>统一社会信用代码91110105MA020B6824 地址北京市朝阳区新源南路3号_3至24层101内B座23层2301单元 电话4000110888
+                </p>
+                
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <script src="../js/jquery-2.2.4.js"></script>
+    <script src="../layer/layer.js"></script>
+    <script src="../js/axios.min.js"></script>
     <script src="../js/cart.js"></script>
+
 </body>
+
 </html>

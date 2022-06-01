@@ -1,0 +1,100 @@
+body {
+  background: url(https://f5.jmstatic.com/static_passport/dist/v1.0.137928/images/account/login_sign/loginPic.jpg?1) no-repeat 400px 200px, url(https://f1.jmstatic.com/static_passport/dist/v1.0.137928/images/logo_new_v1.jpg) no-repeat 150px 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  position: absolute;
+  top: 160px;
+  right: 160px;
+  width: 400px;
+  height: 450px;
+  background: #fff;
+  -webkit-box-shadow: 2px 4px 20px #000;
+  box-shadow: 2px 4px 20px #000;
+}
+
+form>p {
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+  color: #999;
+  background: #FFF8F0;
+}
+
+
+form>input {
+  width: 300px;
+  height: 50px;
+  margin: 20px 50px 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px #cfcfcf solid;
+  background: #fff;
+}
+
+form>.login {
+  width: 80px;
+  height: 30px;
+  margin: 15px 90px;
+  border-radius: 10px;
+  background: #ecddc4;
+  border: 1px #cfcfcf solid;
+}
+
+form .login {
+  width: 80px;
+  height: 30px;
+  margin: 15px 90px;
+  border-radius: 10px;
+  background: #ecddc4;
+  border: 1px #cfcfcf solid;
+}
+
+form .zhuce{
+  height: 50px;
+  width: 80px;
+  margin-left: 65px;
+  margin-bottom: 50px;
+}
+
+form > a {
+  text-decoration: none;
+  background: #fff;
+}
+
+form a {
+  font-size: 14px;
+  float: right;
+  height: 50px;
+  width: 80px;
+  color: black;
+  margin-right: 65px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 1px #cfcfcf solid;
+
+}
+
+footer {
+  /* margin-top: 80px;
+  margin-bottom: 30px; */
+  position: absolute;
+  bottom: 50px;
+  left: 25%;
+
+}
+
+footer>p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}

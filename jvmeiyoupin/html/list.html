@@ -15,9 +15,9 @@
         <!-- 登陆注册 -->
         <div class="header-top">
             <span>欢迎来到聚美!</span>
-            <a href="./login.html">请登录</a>
-            <a href="./register.html">快速注册</a>
-            <a href="./cart.html">我的购物车</a>
+            <a href="../html/login.html">请登录</a>
+            <a href="../html/register.html">快速注册</a>
+            <a href="../html/cart.html">我的购物车</a>
         </div>
         <!-- 搜索 -->
         <div class="header-center w1090">
@@ -65,7 +65,7 @@
             </div>
             <!-- 购物车 -->
             <div class="header-shopping-cart">
-                <a href="#" class="cart_link">
+                <a href="../html/cart.html" class="cart_link">
                     <img src="http://p0.jmstatic.com/assets/cart.gif" width="28" height="28">
                     <span class="text">去购物车结算</span>
                 </a>
@@ -76,7 +76,7 @@
             <div class="index-nav">
                 <ul class="nav-list w1090">
                     <li>
-                        <a href="#">首页</a>
+                        <a href="../html/index.html">首页</a>
                     </li>
                     <li style="background: #ed145b;">
                         <a href="#">商品列表</a>
@@ -119,7 +119,7 @@
         <p class="today-tip">每日十点上新</p>
     </div>
     <!-- 商品列表 -->
-    <div class="product w1090">
+    <div class="sk_container w1090">
         <div class="sk_bd">
             <ul>
                 <!-- <li class="sk_goods">
@@ -137,6 +137,23 @@
                 </li> -->
             </ul>
         </div>
+        <!-- <div class="sk_page"> -->
+            <!-- <span class="page_num">
+                <a href="#" class="pn-prev">&lt;&lt; 上一页</a>
+                <a href="#" class="current">1</a>
+                <a href="#" >2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="dotted">...</a>
+                <a href="#" class="pn-next">下一页&gt;&gt;</a>
+            </span>
+            <span class="page_skip">
+                共10页 到第
+                <input type="text"> 页
+                <button>确定</button>
+            </span> -->
+        <!-- </div> -->
     </div>
 
     <!-- 尾部 -->
@@ -157,8 +174,11 @@
     </footer>
     
     <!-- list.js依赖于axios -->
+    <script src="../js/jquery-2.2.4.js"></script>
+    <script src="../layer/layer.js"></script>
     <script src="../js/axios.min.js"></script>
     <script src="../js/list.js"></script>
+
 </body>
 
 </html>
