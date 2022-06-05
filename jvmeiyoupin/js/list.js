@@ -41,8 +41,8 @@ class List {
         data.list.forEach(goods => {
             // console.log(goods);
             html += `<li class="sk_goods" data-id="${goods.goods_id}">
-                <a href="../html/introduce.html">
-                    <img src="${goods.img_big_logo}" alst="">
+                <a href="#none">
+                    <img src="${goods.img_big_logo}" alst="" class='spimg'>
                 </a>
                 <h5 class="sk_goods_title">${goods.title}</h5>
                 <p class="sk_goods_price">
@@ -71,9 +71,16 @@ class List {
         // console.log(this);
         //获取事件源，判断点击的是否为a标签
         //  console.log(eve.target.classList);
-        if (eve.target.nodeName != 'A' || eve.target.className != 'sk_goods_buy') return;
-
-        // console.log(eve.target);
+     
+        if (eve.target.nodeName == 'IMG' || eve.target.className == 'spimg') {
+            //获取商品id
+            let id = eve.target.parentNode.parentNode.dataset.id;
+            console.log(id);
+            let spid=sessionStorage.setItem('spid',id)
+            location.assign('../html/introduce.html')
+        }
+   if (eve.target.nodeName != 'A' || eve.target.className != 'sk_goods_buy')return;
+        // console.log(eve.target.nodeName== 'IMG' || eve.target.className == 'spimg');
 
         //判断用户是否登录，如果local中有token，表示登录，没有表示该用户未登录
         let token = localStorage.getItem('token');
